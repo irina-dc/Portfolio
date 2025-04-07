@@ -122,7 +122,7 @@ export default function Home() {
       </section>
 
       {/* Sección de Proyectos */}
-      <section id="proyectos" className="max-w-6xl mx-auto my-16 px-6">
+      <section id="proyectos" className="max-w-6xl mx-auto py-10 px-6">
         <h2 className="text-3xl font-bold text-center text-violet-700 mb-10">
           Proyectos Destacados
         </h2>
@@ -172,16 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* Sección de Contacto */}
-      <section id="contacto" className="text-center my-16">
-        <h2 className="text-2xl font-bold">Contacto</h2>
-        <p className="text-gray-600 mt-2">Puedes escribirme a <a href="mailto:tuemail@gmail.com" className="text-purple-600">tuemail@gmail.com</a></p>
-        <div className="mt-4 flex justify-center gap-4">
-          <a href="https://linkedin.com" className="text-purple-600">LinkedIn</a>
-          <a href="https://github.com" className="text-purple-600">GitHub</a>
-        </div>
-      </section>
+     
     </main >
   );
 }
