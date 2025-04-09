@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-purple-950 text-white text-center p-10 overflow-hidden">
       {/* Fondo */}
-      <div className="absolute inset-0 z-0 animate-clouds bg-repeat-x opacity-80" style={{ backgroundImage: "url('/nubes.png')" }}></div>
+      {/* <div className="absolute inset-0 z-0 animate-clouds bg-repeat-x opacity-80" style={{ backgroundImage: "url('/nubes.png')" }}></div> */}
 
       {/* Contenido del Footer */}
       <section id="contacto" className="relative z-10">
