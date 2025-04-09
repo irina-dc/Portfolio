@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ff5d5d;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -24,4 +24,54 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes moveClouds {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-clouds {
+  animation: moveClouds 60s linear infinite;
+}
+.wave {
+  will-change: transform;
+  transform-box: fill-box; /* Asegura que el transform respete el viewBox del SVG */
+  transform-origin: center;
+}
+
+.wave1 {
+  animation: waveMove1 5s ease-in-out infinite alternate;
+}
+
+.wave2 {
+  animation: waveMove2 3s ease-in-out infinite alternate;
+}
+
+.wave3 {
+  animation: waveMove3 1s ease-in-out infinite alternate;
+}
+
+@keyframes waveMove1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(120px); }
+}
+
+@keyframes waveMove2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-150px); }
+}
+
+@keyframes waveMove3 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}
+
+.imagen-foto {
+  object-fit: cover;
 }
